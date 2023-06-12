@@ -224,6 +224,7 @@ h2{
         }
     }
 
+    // sa scroll ni dapit
     .navbarWBG{
         background: var(--SecondaryColor);
         padding: .5rem 1rem;
@@ -500,6 +501,68 @@ h2{
                 text-align: center;
                 opacity: .7;
                 margin-bottom: .10rem;
+            }
+        }
+    }
+}
+
+// Media screens styling aty kapoy nakooo
+@media screen and (min-width: 480px) {
+    // sa home ni
+    .home{
+        padding-top: 12rem;
+    }
+    
+    //search/booking dapit
+    .search{
+        .searchContainer{
+            .searchInputs{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+
+    // subscribe 
+    .subscribe{
+        .sectionContainer{
+            max-width: 80%;
+            margin: auto;
+
+            .inputDiv{
+                flex-direction: row;
+                padding: 0 .5rem;
+                border-radius: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 570px){
+    //home 
+    .home{
+        .mainText{
+            width: 80%;
+        }
+
+        .homeImages{
+            .video{
+                border-radius: 15rem;
+            }
+
+            .train{
+                position: absolute;
+                width: 95%;
+            }
+        }
+    }
+
+    //search/booking dapit
+    .search{
+        .searchContainer{
+            .btns{
+                border-radius: 3rem;
+                flex-direction: row;
             }
         }
     }
