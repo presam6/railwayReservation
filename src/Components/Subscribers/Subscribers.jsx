@@ -4,7 +4,7 @@ const Subscribers = () => {
   return (
     <div className="subscribe section">
       <div className='sectionContainer container'>
-        <h2>For Latest News and Updates send us your Email</h2>
+        <h2>For Latest News and Updates Subscribe to Us</h2>
         <div className="inputDiv flex">
           <input type="text" placeholder='Enter your Email Address' />
           <button className='btn'>Sapakarabskribe</button>

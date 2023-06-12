@@ -11,13 +11,13 @@ const Search = () => {
 
         <div className="btns flex">
 
-          <div className="singleBtn">
-            <span>AC</span>
+          {/* <div className="singleBtn">
+            <span>General</span>
           </div>
 
           <div className="singleBtn">
-            <span>General</span>
-          </div>
+            <span>AC</span>
+          </div> */}
           
         </div>
 
@@ -43,7 +43,7 @@ const Search = () => {
               </div>
             </div>
 
-            <div className="singleInput flex">
+            {/* <div className="singleInput flex">
               <div className="iconDiv">
                 <RiAccountPinCircleLine className='icon'/>
               </div>
@@ -51,7 +51,7 @@ const Search = () => {
                 <h4>Passengers</h4>
                 <input type="text" placeholder='How many passengers'/>
               </div>
-            </div>
+            </div> */}
           
             <div className="singleInput flex">
               <div className="iconDiv">
@@ -63,9 +63,9 @@ const Search = () => {
               </div>
             </div>
 
-            <button className='btn btnBlock flex'>Search Train</button>
+            <button className='btn btnBlock flex text-align:center'>Search Train</button>
           </div>
-          
+
       </div>
     </div>
   )

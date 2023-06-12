@@ -72,7 +72,7 @@ const Navbar = () => {
         </div>
 
         <button className='btn flex btnTwo'>
-            Contact
+            Book Now!
           </button>
 
           <div onClick={showNavBar} onDoubleClick={removeNavBar} className='toggleIcon'>

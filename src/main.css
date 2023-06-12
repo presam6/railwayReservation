@@ -239,72 +239,39 @@ h2 {
   left: 5%;
 }
 
-.search .sectionContainer {
-  width: 100%;
-  padding: 1.5rem;
-  border: 2px solid var(--greyBg);
-  border-radius: 16px;
-  row-gap: 2rem;
-}
-.search .sectionContainer .btns {
-  background: var(--SecondaryColor);
-  padding: 0.5rem;
-  border-radius: 1rem;
-  flex-direction: column;
-  width: 100%;
-  margin: auto;
-}
-.search .sectionContainer .btns .singleBtn {
-  padding: 0.8rem 1.5rem;
-  font-size: 13px;
-  border-radius: 3rem;
-  width: 80%;
-  text-align: center;
-}
-.search .sectionContainer .btns .singleBtn:hover {
-  background: var(--PrimaryColor);
-  color: var(--whiteColor);
-  font-weight: 500;
-  transition: 0.4s ease;
-}
-.search .sectionContainer .btns .active {
-  background: var(--PrimaryColor);
-  color: var(--whiteColor);
-  font-weight: 500;
-}
-.search .sectionContainer .searchInputs {
+.search .searchInputs {
   width: 100%;
   justify-content: center;
   flex-direction: column;
   gap: 1.5rem;
 }
-.search .sectionContainer .searchInputs .singleInput .iconDiv {
+.search .searchInputs .singleInput .iconDiv {
   padding: 16px 10px;
   border-radius: 3rem;
   background: var(--SecondaryColor);
   margin-right: 1rem;
 }
-.search .sectionContainer .searchInputs .singleInput .iconDiv .icon {
+.search .searchInputs .singleInput .iconDiv .icon {
   color: var(--blackColor);
   opacity: 0.7;
 }
-.search .sectionContainer .searchInputs .singleInput .texts h4 {
+.search .searchInputs .singleInput .texts h4 {
   padding-top: 0;
   padding-bottom: 0.7rem;
   color: var(--blackColor);
   font-weight: 700;
 }
-.search .sectionContainer .searchInputs .singleInput .texts input {
+.search .searchInputs .singleInput .texts input {
   width: 95%;
   border: none;
   outline: none;
   background: transparent;
 }
-.search .sectionContainer .searchInputs .singleInput .texts input::-moz-placeholder {
+.search .searchInputs .singleInput .texts input::-moz-placeholder {
   font-size: 12px;
   opacity: 0.5;
 }
-.search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
+.search .searchInputs .singleInput .texts input::placeholder {
   font-size: 12px;
   opacity: 0.5;
 }
@@ -439,7 +406,7 @@ h2 {
   .home {
     padding-top: 12rem;
   }
-  .search .searchContainer .searchInputs {
+  .search .sectionContainer .searchInputs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -463,9 +430,95 @@ h2 {
   .home .homeImages .train {
     position: absolute;
     width: 95%;
+    top: 10%;
+    left: 10%;
   }
-  .search .searchContainer .btns {
+  .search .sectionContainer .btns {
     border-radius: 3rem;
     flex-direction: row;
+  }
+  .support .sectionContainer .infoDiv .textDiv {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subscribe .sectionContainer .inputDiv {
+    justify-content: space-between;
+  }
+  .subscribe .sectionContainer .inputDiv .btn {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
+@media screen and (min-width: 680px) {
+  .home .mainText {
+    width: 80%;
+  }
+  .home .homeImages .videoDiv {
+    width: 80%;
+  }
+  .home .homeImages .videoDiv .video {
+    height: 100%;
+    width: 100%;
+    border-radius: 15rem;
+  }
+  .home .homeImages .train {
+    width: 80%;
+    top: 10%;
+    left: 15%;
+  }
+  .search .sectionContainer .btn {
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .search .sectionContainer .searchInputs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .navBar {
+    align-items: center;
+  }
+  .navBar .navBarOne .none {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .navBar .navBarOne .none li {
+    font-size: 13px;
+    gap: 0.5rem;
+    color: var(--textColor);
+  }
+  .navBar .navBarOne .none li:hover {
+    color: var(--PrimaryColor);
+    text-decoration: underline;
+  }
+  .navBar .navBarTwo {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBar .navBarTwo .logoDiv .Logo {
+    max-width: 20%;
+  }
+  .navBar .navBarTwo .menu {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .navBar .navBarTwo .menu .listItem {
+    padding: 0 0.5rem;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--textColor);
+    font-weight: 700;
+  }
+  .navBar .navBarTwo .menu .listItem:hover {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+  }
+  .navBar .navBarTwo .btnOne, .navBar .navBarTwo .toggleIcon {
+    display: none;
+  }
+  .navBar .navBarTwo .btnTwo {
+    margin-left: 5%;
+    border-radius: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
