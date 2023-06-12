@@ -420,7 +420,6 @@ h2{
 // subscribe
 .subscribe{
     background: var(--SecondaryColor);
-
     .sectionContainer{
         text-align: center;
         .inputDiv{
@@ -846,4 +845,19 @@ h2{
             max-width: 50%;
         }
     }
+}
+
+::selection{
+    background: var(--PrimaryColor);
+    color: var(--whiteColor);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--PrimaryColor);
+    border-radius: 10px;
 }

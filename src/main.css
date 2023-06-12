@@ -613,4 +613,22 @@ h2 {
   .subscribe .sectionContainer {
     max-width: 50%;
   }
+}
+::-moz-selection {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+::selection {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--PrimaryColor);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
