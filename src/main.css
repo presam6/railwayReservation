@@ -275,6 +275,11 @@ h2 {
   font-size: 12px;
   opacity: 0.5;
 }
+.search .searchInputs .btn {
+  text-align: center;
+  max-width: 55%;
+  border-radius: 5rem;
+}
 
 .support .sectionContainer .tittlesDiv {
   text-align: center;
@@ -318,7 +323,7 @@ h2 {
 }
 .support .sectionContainer .infoDiv .imgDiv img {
   width: 100%;
-  max-width: 420px;
+  max-width: 600px;
 }
 
 .subscribe {
@@ -520,5 +525,92 @@ h2 {
   .navBar .navBarTwo .btnTwo {
     margin-left: 5%;
     border-radius: 1rem;
+  }
+  .search .sectionContainer .searchInputs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .search .sectionContainer .searchInputs .singleInput .text input {
+    width: 100%;
+  }
+  .support .sectionContainer .infoDiv {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  .support .sectionContainer .infoDiv .textDiv {
+    margin-top: 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 960px) {
+  .home {
+    padding-top: 13rem;
+  }
+  .home .mainText {
+    width: 70%;
+    padding-bottom: 1.5rem;
+    font-size: 22px;
+    line-height: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+  .navBar .navBarOne, .navBar .navBarTwo {
+    padding: 1.5rem 5rem;
+  }
+  .navBar .navbarWBG {
+    padding: 0 5rem;
+  }
+  .home .mainText {
+    width: 60%;
+    font-size: 25px;
+    line-height: 4rem;
+  }
+  .home .homeImages .videoDiv {
+    width: 90%;
+    height: 300px;
+  }
+  .home .homeImages .videoDiv .video {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 15rem;
+  }
+  .search .sectionContainer {
+    margin-top: 10rem;
+  }
+}
+@media screen and (min-width: 1106px) {
+  .subscribe .sectionContainer {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1332px) {
+  .navBar .navBarTwo .menu {
+    gap: 1rem;
+  }
+  .navBar .navBarTwo .menu .listItem {
+    padding: 0 1.5rem;
+    font-size: 14px;
+  }
+  .subscribe .sectionContainer {
+    max-width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
