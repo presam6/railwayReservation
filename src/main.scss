@@ -455,14 +455,23 @@ h2{
             .logoDiv{
                 .Logo{
                     margin-top: 15px;
+                    height: 10%;
                     width: 20%;
+                    padding: 0;
                 }
+            }
+
+            .text{
+                color: var(--whiteColor);
+                text-align: center;
+                font-size: 13px;
             }
 
 
             .socialIcon{
                 margin-top: 1rem;
                 gap: 1rem;
+                margin-bottom: 2rem;
 
                 .icon{
                     height: 30px;
@@ -484,11 +493,13 @@ h2{
             }
         }
 
-        .footerLinks{
-            display: grid;
-
-            .linkTittle{
+        .footerEnd{
+            .endMsg{
                 color: var(--whiteColor);
+                font-size: 13px;
+                text-align: center;
+                opacity: .7;
+                margin-bottom: .10rem;
             }
         }
     }

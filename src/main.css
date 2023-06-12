@@ -397,11 +397,19 @@ h2 {
 }
 .footer .sectionContainer .gridOne .logoDiv .Logo {
   margin-top: 15px;
+  height: 10%;
   width: 20%;
+  padding: 0;
+}
+.footer .sectionContainer .gridOne .text {
+  color: var(--whiteColor);
+  text-align: center;
+  font-size: 13px;
 }
 .footer .sectionContainer .gridOne .socialIcon {
   margin-top: 1rem;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .footer .sectionContainer .gridOne .socialIcon .icon {
   height: 30px;
@@ -419,9 +427,10 @@ h2 {
   border: 1px solid var(--PrimaryColor);
   color: var(--whiteColor);
 }
-.footer .sectionContainer .footerLinks {
-  display: grid;
-}
-.footer .sectionContainer .footerLinks .linkTittle {
+.footer .sectionContainer .footerEnd .endMsg {
   color: var(--whiteColor);
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 0.1rem;
 }/*# sourceMappingURL=main.css.map */

@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="logoDiv">
             <img src={myLogo} className='Logo' />
           </div>
-          <p className='text'>Come ride our train!</p>
+          <p className='text'>Come visit our Social Media links!</p>
           <div className="socialIcon flex">
             <TiSocialFacebook className='icon'/>
             <AiOutlineTwitter className='icon'/>
@@ -22,20 +22,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footerLinks">
-          <span className="linkTittle">For more Info</span>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Seats</a>
-            </li>
-            <li>
-              <a href="">Contact Us</a>
-            </li>
+        <div className="footerEnd">
+          <p className="endMsg">MOS Railway Reservation - All Rights Reserved 2023</p>
         </div>
       </div>
 
