@@ -6,7 +6,7 @@ import {AiOutlineGlobal} from 'react-icons/ai'
 import {CgMenuGridO} from 'react-icons/cg'
 
 //imported imgs
-import logo from '../../assets/logo-starrail.png'
+import logo from '../Navbar/logo-starrail.png'
 
 const Navbar = () => {
   // remove navbar in small width screens

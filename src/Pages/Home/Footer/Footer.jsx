@@ -1,5 +1,5 @@
 import React from 'react'
-import myLogo from '../../assets/logo-starrail.png'
+import myLogo from '../Footer/logo-starrail.png'
 import {TiSocialFacebook} from 'react-icons/ti'
 import { AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai'
 import {FaPinterestP} from 'react-icons/fa'

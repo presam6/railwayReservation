@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 
 // import for images
-import myImage from '../../assets/for support.png'
+import myImage from '../Support/for support.png'
 
 // import my AOS
 import Aos from 'aos'

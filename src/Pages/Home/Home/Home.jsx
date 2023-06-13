@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 
 // imported assets for home
-import video from '../../assets/earth.mp4'
-import myTrain from '../../assets/bettertrain.png'
+import video from '../Home/earth.mp4'
+import myTrain from '../Home/bettertrain.png'
 
 // import my AOS
 import Aos from 'aos'
@@ -20,7 +20,7 @@ const Home = () => {
     <div className='home flex container'>
 
       <div className='mainText'>
-        <h1 data-aos='fade-up' data-aos-duration='2500' >Cum ride my train, you will surely enjoy my large train</h1>
+        <h1 data-aos='fade-up' data-aos-duration='2500' >MOS Railway Reservations | Fast, Convenient, and Affordable</h1>
       </div>
 
       <div className="homeImages flex">

@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Home from './Components/Home/Home'
-import Search from './Components/Search/Search'
-import Support from './Components/Support/Support'
-import Subscribers from './Components/Subscribers/Subscribers'
-import Footer from './Components/Footer/Footer'
+import Navbar from './Pages/Home/Navbar/Navbar'
+import Home from './Pages/Home/Home/Home'
+import Search from './Pages/Home/Search/Search'
+import Support from './Pages/Home/Support/Support'
+import Subscribers from './Pages/Home/Subscribers/Subscribers'
+import Footer from './Pages/Home/Footer/Footer'
 
 const App = () => {
   return (
