@@ -114,7 +114,7 @@ h2{
     color: var(--blackColor);
 }
 
-// navbar section styling 
+// navbar section styling ==========================================================
 .navBar{
     position: fixed;
     flex-direction: column;
@@ -233,7 +233,7 @@ h2{
     }
 }
 
-// home section styling
+// home section styling ============================================================
 .home{
     padding-top: 10rem;
     text-align: center;
@@ -270,7 +270,7 @@ h2{
     }
 }
 
-//search section styling
+//search section styling ===========================================================
 .search{
     // .sectionContainer{
     //     width: 100%;
@@ -357,10 +357,9 @@ h2{
                 border-radius: 5rem;
             }
         }
-    }
+}
 
-
-// support section styling
+// support section styling =========================================================
 .support{
     .sectionContainer{
         .tittlesDiv{
@@ -417,7 +416,7 @@ h2{
     }
 }
 
-// subscribe
+// subscribe =======================================================================
 .subscribe{
     background: var(--SecondaryColor);
     .sectionContainer{
@@ -447,7 +446,7 @@ h2{
     }
 }
 
-// footer section styling
+// footer section styling ==========================================================
 .footer{
     background: var(--blackColor);
     .sectionContainer{
@@ -511,12 +510,18 @@ h2{
     }
 }
 
-// Media screens styling aty kapoy nakooo
+// Media screens styling aty kapoy nakooo ==========================================
 @media screen and (min-width: 480px) {
     // sa home ni
     .home{
         padding-top: 12rem;
     }
+
+    // .navBar{
+    //     .navbar{
+            
+    //     }
+    // }
     
     //search/booking dapit
     .search{
