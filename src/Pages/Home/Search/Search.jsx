@@ -1,26 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { RxCalendar } from "react-icons/rx";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+// import { HiOutlineLocationMarker } from 'react-icons/hi';
+// import { RxCalendar } from 'react-icons/rx';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Search = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const [departureStation, setDepartureStation] = useState("");
-  const [arrivalStation, setArrivalStation] = useState("");
-  const [selectedDate, setSelectedDate] = useState("");
-  const [searchResult, setSearchResult] = useState(null);
+  const [departureStation, setDepartureStation] = useState('');
+  const [arrivalStation, setArrivalStation] = useState('');
+  const [selectedDate, setSelectedDate] = useState('');
 
   const handleDepartureChange = (event) => {
-    const selectedDeparture = event.target.value;
-    setDepartureStation(selectedDeparture);
+    setDepartureStation(event.target.value);
 
-    if (arrivalStation === selectedDeparture) {
-      setArrivalStation("");
+    if (arrivalStation === event.target.value) {
+      setArrivalStation('');
     }
   };
 
@@ -34,126 +31,45 @@ const Search = () => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-
-    // Create a payload object with the search data
-    const searchData = {
-      departureStation: departureStation,
-      arrivalStation: arrivalStation,
-      selectedDate: selectedDate,
-    };
-
-    axios.post('http://localhost/railwaypit/search.php', searchData)
-      .then((response) => {
-        // Log the response data
-        console.log('Response:', response.data);
-
-        // Process the received data
-        setSearchResult(response.data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-
-    window.location.href = "/timetable";
+    console.log('Departure Station:', departureStation);
+    console.log('Arrival Station:', arrivalStation);
+    console.log('Selected Date:', selectedDate);
   };
 
-  const cities = [
-    "Cagayan de Oro City",
-    "Malaybalay City",
-    "Valencia City",
-    "Quezon",
-    "Lorega",
-    "Buda",
-    "Mintal",
-    "Davao City",
-  ];
-
-  const arrivalCityOptions = cities
-    .filter((city) => city !== departureStation)
-    .map((city) => (
-      <option key={city} value={city}>
-        {city}
-      </option>
-    ));
-
-  const currentDate = new Date();
-  const maxSelectableDate = new Date();
-  maxSelectableDate.setDate(currentDate.getDate() + 6);
-
   return (
-    <div id="search" className="search container section">
+    <div className="search container section">
       <div className="sectionContainer grid">
         <div className="btns flex"></div>
 
-        <form onSubmit={handleSearch}>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            className="searchInputs flex"
-          >
-            <div
-              className={`singleInput flex ${selectedDate ? "selected" : ""}`}
-            >
-              <div className="iconDiv">
-                <HiOutlineLocationMarker className="icon" />
-              </div>
-              <div className="texts">
-                <h4>Departure Station</h4>
-                <select
-                  value={departureStation}
-                  onChange={handleDepartureChange}
-                >
-                  <option value="">-- Select Departure Station --</option>
-                  {cities.map((city) => (
-                    <option key={city} value={city}>
-                      {city}
-                    </option>
-                  ))}
-                </select>
-              </div>
+        <div data-aos="fade-up" data-aos-duration="2500" className="searchInputs flex">
+          <form action="action.php" method="post">
+            <div className="form-group">
+              <label htmlFor="origin">Source</label>
+              <select name="origin" id="origin" value={departureStation} onChange={handleDepartureChange}>
+                <option value="Cagayan de Oro">CDO</option>
+                <option value="Davao">DAV</option>
+              </select>
             </div>
-
-            <div
-              className={`singleInput flex ${selectedDate ? "selected" : ""}`}
-            >
-              <div className="iconDiv">
-                <HiOutlineLocationMarker className="icon" />
-              </div>
-              <div className="texts">
-                <h4>Arrival Station</h4>
-                <select value={arrivalStation} onChange={handleArrivalChange}>
-                  <option value="">-- Select Arrival Station --</option>
-                  {arrivalCityOptions}
-                </select>
-              </div>
+            <div className="form-group">
+              <label htmlFor="destination">Destination</label>
+              <select name="destination" id="destination" value={arrivalStation} onChange={handleArrivalChange}>
+                <option value="Cagayan de Oro">CDO</option>
+                <option value="Davao">DAV</option>
+                <option value="Valencia">VAL</option>
+                <option value="Quezon">QUE</option>
+                <option value="Lorega">LOR</option>
+                <option value="Mintal">MIN</option>
+                <option value="Buda">BUD</option>
+                <option value="Malaybalay">MAL</option>
+              </select>
             </div>
-
-            <div
-              className={`singleInput flex ${selectedDate ? "selected" : ""}`}
-            >
-              <div className="iconDiv">
-                <RxCalendar className="icon" />
-              </div>
-              <div className="texts">
-                <h4>Book Date</h4>
-                <input
-                  type="date"
-                  min={currentDate.toISOString().split("T")[0]}
-                  max={maxSelectableDate.toISOString().split("T")[0]}
-                  value={selectedDate}
-                  onChange={handleDateChange}
-                />
-              </div>
+            <div className="form-group">
+              <label htmlFor="date">Book Date</label>
+              <input type="text" className="form-control" id="date" name="date" value={selectedDate} onChange={handleDateChange} />
             </div>
-
-            <button
-              type="submit"
-              className="btn btnBlock flex text-align:center"
-            >
-              Search Train
-            </button>
-          </div>
-        </form>
+            <input type="submit" className="btn btn-primary" onClick={handleSearch} />
+          </form>
+        </div>
       </div>
     </div>
   );
