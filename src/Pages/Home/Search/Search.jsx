@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+
+// import icons but gi comment sa karon
 // import { HiOutlineLocationMarker } from 'react-icons/hi';
 // import { RxCalendar } from 'react-icons/rx';
 import Aos from 'aos';
