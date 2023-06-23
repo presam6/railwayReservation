@@ -36,6 +36,8 @@ const Search = () => {
     console.log('Departure Station:', departureStation);
     console.log('Arrival Station:', arrivalStation);
     console.log('Selected Date:', selectedDate);
+
+    window.location.href = '/timetable'
   };
 
   return (
