@@ -6,6 +6,10 @@
   font-family: "Playfair", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --PrimaryColor: hsl(225, 50%, 48%);
   --SecondaryColor: hsl(180, 17%, 95%);
@@ -21,8 +25,7 @@
   --greyBg: hsl(0, 0%, 96%);
   --greyText: rgb(145, 145, 145);
   --inputColor: hsl(330, 12%, 97%);
-  --boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05)
-  0px 4px 6px -2px;
+  --boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   --transition: .4s ease-in-out;
 }
 
@@ -84,7 +87,8 @@ li {
   background: var(--HoverColor);
 }
 
-img, video {
+img,
+video {
   width: 100%;
   height: auto;
 }
@@ -218,26 +222,6 @@ h2 {
   font-size: 15px;
   line-height: 2.5rem;
 }
-.home .homeImages {
-  width: 100%;
-  margin: 1rem auto 0;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border-radius: 5rem;
-}
-.home .homeImages .videoDiv {
-  width: 100%;
-}
-.home .homeImages .videoDiv .video {
-  border-radius: 10rem;
-}
-.home .homeImages .train {
-  position: absolute;
-  width: 100%;
-  top: 5%;
-  left: 5%;
-}
 
 .search .searchInputs {
   width: 100%;
@@ -326,85 +310,95 @@ h2 {
   max-width: 600px;
 }
 
-.subscribe {
-  background: var(--SecondaryColor);
+.update {
+  background: var(--whiteColor);
 }
-.subscribe .sectionContainer {
+.update .sectionContainer {
   text-align: center;
+  font-size: 10px;
+  font-weight: 700;
 }
-.subscribe .sectionContainer .inputDiv {
+.update .sectionContainer .inputDiv {
   margin-top: 1rem;
   flex-direction: column;
   background: var(--SecondaryColor);
   border-radius: 1rem;
 }
-.subscribe .sectionContainer .inputDiv input {
+.update .sectionContainer .inputDiv input {
   border: none;
   outline: none;
   background: transparent;
   padding: 1rem 0.5rem;
 }
-.subscribe .sectionContainer .inputDiv input::-moz-placeholder {
+.update .sectionContainer .inputDiv input::-moz-placeholder {
   font-size: 13px;
-  opacity: 0.5;
+  opacity: 0.9;
 }
-.subscribe .sectionContainer .inputDiv input::placeholder {
+.update .sectionContainer .inputDiv input::placeholder {
   font-size: 13px;
-  opacity: 0.5;
+  opacity: 0.9;
 }
-.subscribe .sectionContainer .inputDiv .btn {
+.update .sectionContainer .inputDiv .btn {
   width: 100%;
 }
 
-.footer {
-  background: var(--blackColor);
-}
-.footer .sectionContainer {
-  gap: 2.5rem;
-}
-.footer .sectionContainer .gridOne {
-  gap: 1rem;
+.whitespace .sectionContainer {
+  width: 100%;
   justify-content: center;
-  margin: auto;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 5rem;
 }
-.footer .sectionContainer .gridOne .logoDiv .Logo {
-  margin-top: 15px;
-  height: 10%;
-  width: 20%;
-  padding: 0;
-}
-.footer .sectionContainer .gridOne .text {
-  color: var(--whiteColor);
-  text-align: center;
-  font-size: 13px;
-}
-.footer .sectionContainer .gridOne .socialIcon {
+.whitespace .sectionContainer .singleInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1rem;
-  gap: 1rem;
-  margin-bottom: 2rem;
 }
-.footer .sectionContainer .gridOne .socialIcon .icon {
-  height: 30px;
-  width: 30%;
-  border-radius: 10rem;
-  border: 1px solid var(--borderColor);
-  box-shadow: var(--boxShadow);
-  padding: 0.4rem;
-  color: var(--greyText);
+.whitespace .sectionContainer .singleInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  color: var(--blackColor);
+  font-weight: 700;
 }
-.footer .sectionContainer .gridOne .socialIcon .icon:hover {
-  background: var(--PrimaryColor);
-  transform: translateY(-7px);
-  transition: var(--transition);
-  border: 1px solid var(--PrimaryColor);
-  color: var(--whiteColor);
+.whitespace .sectionContainer .singleInput .inputDiv {
+  width: 95%;
+  margin-top: 1rem;
+  flex-direction: column;
+  background: var(--SecondaryColor);
+  border-radius: 1rem;
 }
-.footer .sectionContainer .footerEnd .endMsg {
-  color: var(--whiteColor);
+.whitespace .sectionContainer .singleInput .inputDiv input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.8rem 0.3rem;
+}
+.whitespace .sectionContainer .singleInput .inputDiv input::-moz-placeholder {
   font-size: 13px;
+  opacity: 0.5;
   text-align: center;
-  opacity: 0.7;
-  margin-bottom: 0.1rem;
+  background: var(--SecondaryColor);
+}
+.whitespace .sectionContainer .singleInput .inputDiv input::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  text-align: center;
+  background: var(--SecondaryColor);
+}
+.whitespace .sectionContainer .doubleInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+.whitespace .sectionContainer .doubleInput .singleInput {
+  width: 48%;
+}
+.whitespace .sectionContainer .btn {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 480px) {
@@ -415,14 +409,18 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .subscribe .sectionContainer {
+  .update .sectionContainer {
     max-width: 80%;
     margin: auto;
   }
-  .subscribe .sectionContainer .inputDiv {
+  .update .sectionContainer .inputDiv {
     flex-direction: row;
     padding: 0 0.5rem;
     border-radius: 3rem;
+    justify-content: space-between;
+  }
+  .update .sectionContainer .inputDiv .btn {
+    width: 100%;
   }
 }
 @media screen and (min-width: 570px) {
@@ -446,10 +444,10 @@ h2 {
     margin-top: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
-  .subscribe .sectionContainer .inputDiv {
+  .update .sectionContainer .inputDiv {
     justify-content: space-between;
   }
-  .subscribe .sectionContainer .inputDiv .btn {
+  .update .sectionContainer .inputDiv .btn {
     max-width: -moz-max-content;
     max-width: max-content;
   }
@@ -519,7 +517,8 @@ h2 {
     color: var(--PrimaryColor);
     font-weight: 700;
   }
-  .navBar .navBarTwo .btnOne, .navBar .navBarTwo .toggleIcon {
+  .navBar .navBarTwo .btnOne,
+  .navBar .navBarTwo .toggleIcon {
     display: none;
   }
   .navBar .navBarTwo .btnTwo {
@@ -571,7 +570,8 @@ h2 {
     width: 75%;
     margin: auto;
   }
-  .navBar .navBarOne, .navBar .navBarTwo {
+  .navBar .navBarOne,
+  .navBar .navBarTwo {
     padding: 1.5rem 5rem;
   }
   .navBar .navbarWBG {
@@ -598,7 +598,7 @@ h2 {
   }
 }
 @media screen and (min-width: 1106px) {
-  .subscribe .sectionContainer {
+  .update .sectionContainer {
     max-width: 60%;
   }
 }
@@ -610,7 +610,7 @@ h2 {
     padding: 0 1.5rem;
     font-size: 14px;
   }
-  .subscribe .sectionContainer {
+  .update .sectionContainer {
     max-width: 50%;
   }
 }
@@ -631,4 +631,4 @@ h2 {
 ::-webkit-scrollbar-thumb {
   background: var(--PrimaryColor);
   border-radius: 10px;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=manage.css.map */

@@ -17,10 +17,10 @@ const Home = () => {
 
 
   return (
-    <div className='home flex container'>
+    <div id='home Home' className='home flex container'>
 
       <div className='mainText'>
-        <h1 data-aos='fade-up' data-aos-duration='2500' >MOS Railway Reservations | Fast, Convenient, and Affordable</h1>
+        <h1 data-aos='fade-up' data-aos-duration='2500' >Mindanao: Star Rail | Fast, Convenient, and Affordable</h1>
       </div>
 
       <div className="homeImages flex">

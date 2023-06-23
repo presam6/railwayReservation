@@ -4,7 +4,7 @@ import { BsPhoneVibrate } from 'react-icons/bs';
 import { AiOutlineGlobal } from 'react-icons/ai';
 import { CgMenuGridO } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
-import logo from '../Navbar/logo-starrail.png';
+import logo from './logo-starrail.png';
 
 const Navbar = () => {
   const [active, setActive] = useState('navBarMenu');
@@ -49,8 +49,8 @@ const Navbar = () => {
         </div>
 
         <div className="atb flex">
-        <Link to='adminLogin'>Admin Log in</Link>
-          {/* <span>Sign Out</span> */}
+          <span>Sign In</span>
+          <span>Sign Out</span>
         </div>
       </div>
 
@@ -72,14 +72,14 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <button onClick={removeNavBar} className="btn flex btnOne">
+          {/* <button onClick={removeNavBar} className="btn flex btnOne">
             Book Now!
-          </button>
+          </button> */}
         </div>
 
-        <button className="btn flex btnTwo">
+        {/* <button className="btn flex btnTwo">
           <a href="#search">Book Now!</a>
-        </button>
+        </button> */}
 
         <div onClick={showNavBar} className="toggleIcon">
           <CgMenuGridO className="icon" />

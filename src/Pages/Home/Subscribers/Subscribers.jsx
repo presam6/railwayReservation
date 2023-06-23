@@ -12,11 +12,11 @@ const Subscribers = () => {
 
   return (
     <div className="subscribe section">
-      <div data-aos='fade-up' data-aos-duration='2500' className='sectionContainer container'>
+      <div className='sectionContainer container'>
         <h2>For Latest News and Updates Subscribe to Us</h2>
-        <div className="inputDiv flex">
+        <div data-aos='fade-left' data-aos-duration='1500' className="inputDiv flex">
           <input type="text" placeholder='Enter your Email Address' />
-          <button className='btn'>Subscribe</button>
+          <button data-aos='fade-left' data-aos-duration='1500' className='btn'>Subscribe</button>
         </div>
       
       </div>

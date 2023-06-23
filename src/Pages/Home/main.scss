@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap');
 
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Playfair', serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --PrimaryColor: hsl(225, 50%, 48%);
     --SecondaryColor: hsl(180, 17%, 95%);
@@ -342,10 +348,18 @@ h2{
                         border: none;
                         outline: none;
                         background: transparent;
+                        
+                        &:focus{
+                            outline: none;
+                        }
 
                         &::placeholder{
                             font-size: 12px;
                             opacity: .5;
+                        }
+
+                        onChange {
+                            border: 1px solid var(--blackColor);
                         }
                     }
                 }
@@ -357,8 +371,7 @@ h2{
                 border-radius: 5rem;
             }
         }
-    }
-
+}
 
 // support section styling
 .support{

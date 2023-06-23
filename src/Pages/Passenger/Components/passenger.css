@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --PrimaryColor: hsl(225, 50%, 48%);
+  --SecondaryColor: hsl(180, 17%, 95%);
+  --colorOne: hsl(0, 84%, 57%);
+  --colorTwo: hsl(61, 100%, 50%);
+  --colorThree: hsl(115, 65%, 49%);
+  --HoverColor: hsl(225, 56%, 59%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 12%);
+  --textColor: hsl(240, 1%, 48%);
+  --borderColor: hsl(0, 0%, 83%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(145, 145, 145);
+  --inputColor: hsl(330, 12%, 97%);
+  --boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+
+body {
+  background: var(--whiteColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--PrimaryColor);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  color: var(--whiteColor);
+}
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.btn:hover {
+  background: var(--HoverColor);
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+  color: var(--greyText);
+}
+
+p {
+  font-size: 13px;
+  color: var(--greyText);
+  line-height: 22px;
+}
+
+h4 {
+  padding: 1rem 0;
+  font-weight: 700;
+  color: var(--blackColor);
+}
+
+h2 {
+  font-size: 25px;
+  padding: 1rem 0;
+  color: var(--blackColor);
+}
+
+.passnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}
+.passnav .logoDiv img {
+  width: 100px;
+  /* Adjust the width as needed */
+}
+.passnav .top-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.passnav .top-nav li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--blackColor);
+}
+.passnav .top-nav li svg {
+  color: var(--blackColor);
+}
+.passnav .atb {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.passnav button[type=button] {
+  padding: 0.5rem 1rem;
+  background-color: var(--PrimaryColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.passnav button[type=button]:hover {
+  background-color: var(--PrimaryColor);
+}
+
+.container-first {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.another-container {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.container-one {
+  width: 50%;
+  padding-left: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  margin-top: 1.9rem;
+}
+
+.Main-two,
+.Main-three,
+.Maine-four,
+.Maine-five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Main-two input,
+.Main-three input,
+.Maine-four select,
+.Maine-five input {
+  margin-bottom: 10px;
+}
+
+.hr-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--PrimaryColor);
+  margin: 20px 0;
+}/*# sourceMappingURL=passenger.css.map */
