@@ -432,7 +432,7 @@ h2 {
 
     .sectionContainer {
         text-align: center;
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 700;
 
         .inputDiv {
@@ -448,7 +448,7 @@ h2 {
                 padding: 1rem .5rem;
 
                 &::placeholder {
-                    font-size: 13px;
+                    font-size: 16px;
                     opacity: .90;
                 }
             }
@@ -457,6 +457,12 @@ h2 {
                 width: 100%;
             }
         }
+    }
+
+    .messageDiv{
+        font-size: 20px;
+        color: var(--PrimaryColor);
+        margin-top: .5rem;
     }
 }
 

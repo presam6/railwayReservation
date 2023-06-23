@@ -12,9 +12,9 @@ const PassNav = () => {
                 <li className='back flex'>
                     Home
                 </li>
-                <li className='timetable flex'><VscChevronRight />Timetable</li>
+                <li className='timetable flex'><VscChevronRight /><a href="/timetable">Timetable</a></li>
                 <li className='passenger flex'><VscChevronRight />Passenger</li>
-                <li className='exit flex'><VscChevronRight />Confirmation</li>
+                {/* <li className='exit flex'><VscChevronRight />Confirmation</li> */}
             </div>
 
             <div className="atb">

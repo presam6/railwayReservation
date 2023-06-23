@@ -8,12 +8,11 @@ const TimeNav = () => {
         <img src={logo} />
       </div>
       <div className="top-nav container">
-        <li className='back flex'>
-          Home
+        <li className='back flex'><a href="/">Home</a>
         </li>
         <li className='timetable flex'><VscChevronRight />Timetable</li>
         <li className='passenger flex'><VscChevronRight />Passenger</li>
-        <li className='exit flex'><VscChevronRight />Confirmation</li>
+        {/* <li className='exit flex'><VscChevronRight />Confirmation</li> */}
       </div>
 
       <div className="atb">

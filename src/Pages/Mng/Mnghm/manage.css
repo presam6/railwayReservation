@@ -315,7 +315,7 @@ h2 {
 }
 .update .sectionContainer {
   text-align: center;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 700;
 }
 .update .sectionContainer .inputDiv {
@@ -331,15 +331,20 @@ h2 {
   padding: 1rem 0.5rem;
 }
 .update .sectionContainer .inputDiv input::-moz-placeholder {
-  font-size: 13px;
+  font-size: 16px;
   opacity: 0.9;
 }
 .update .sectionContainer .inputDiv input::placeholder {
-  font-size: 13px;
+  font-size: 16px;
   opacity: 0.9;
 }
 .update .sectionContainer .inputDiv .btn {
   width: 100%;
+}
+.update .messageDiv {
+  font-size: 20px;
+  color: var(--PrimaryColor);
+  margin-top: 0.5rem;
 }
 
 .whitespace .sectionContainer {
