@@ -60,8 +60,8 @@ const BorderOne = () => {
           <input type="text" id="address" name="address" required />
         </div>
         <div className="Main-button-con">
-          <button>
-            <a href="/">Continue</a>
+          <button className='btn'>
+            <a href="/confirm">Book Ticket</a>
           </button>
         </div>
       </div>

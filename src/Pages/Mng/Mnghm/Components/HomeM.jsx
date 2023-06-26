@@ -5,10 +5,11 @@ const HomeM = () => {
   return (
     <div>
       <Navbar />
+
       <div id='home' className='home flex container'>
 
         <div className='mainText'>
-          <h1>MOS R.R | Manage Booking</h1>
+          <h1>Mindanao: Star Rail | Manage Booking</h1>
         </div>
 
         {/* <div className="homeImages flex">

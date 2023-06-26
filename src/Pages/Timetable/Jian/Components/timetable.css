@@ -204,6 +204,9 @@ h2 {
 .timetable-container .custom-list .list-item .dataContainer .gen {
   justify-self: start;
 }
+.timetable-container .custom-list .list-item .btn {
+  margin-top: 3rem;
+}
 .timetable-container .loading-message {
   text-align: center;
   font-size: 18px;

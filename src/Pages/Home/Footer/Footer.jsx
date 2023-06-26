@@ -23,7 +23,8 @@ const Footer = () => {
         </div>
 
         <div className="footerEnd">
-          <p className="endMsg">MOS Railway Reservation - All Rights Reserved 2023</p>
+          <p className="endMsg">Mindano: Star Rail - All Rights Reserved 2023</p>
+          <p className="endMsg1">Made by Maglangit, Olango, and Sanchez Jian</p>
         </div>
       </div>
 

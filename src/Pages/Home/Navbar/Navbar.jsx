@@ -34,7 +34,7 @@ const Navbar = () => {
     <div className="navBar flex">
       <div className="navBarOne flex">
         <div>
-          <SiConsul className="icon" />
+          <p>Mindanao: Star Rail</p>
         </div>
 
         <div className="none flex">
@@ -68,7 +68,7 @@ const Navbar = () => {
               <Link to="/manageBooking">Manage Booking</Link>
             </li>
             <li onClick={removeNavBar} className="listItem">
-              About Us
+              <Link to="http://localhost/railway_reservation/loadXml.php">Data Mart</Link>
             </li>
           </ul>
 

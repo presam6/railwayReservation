@@ -63,6 +63,10 @@ const TimetableDetails = () => {
                 </div>
 
               </div>
+
+              <button className='btn'>
+                  <a href="/passenger">Continue</a>
+                </button>
             </li>
           ))}
         </ul>

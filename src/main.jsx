@@ -7,6 +7,8 @@ import TimeNav from './Pages/Timetable/Jian/Components/timeNav.jsx';
 import TimetableDetails from './Pages/Timetable/Jian/Components/timetableDetails.jsx';
 import BorderOne from './Pages/Passenger/Components/BorderOne.jsx';
 import PassNav from './Pages/Passenger/Components/PassNav.jsx';
+import ConNavbar from './Pages/Confirm/Components/conNavbar.jsx';
+import ConfirmDetails from './Pages/Confirm/Components/confirmDetails.jsx';
 
 // routing
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -16,6 +18,7 @@ import './Pages/Mng/Mnghm/manage.css';
 import './Pages/Login/login.css';
 import './Pages/Passenger/Components/passenger.css';
 import './Pages/Timetable/Jian/Components/timetable.css';
+import './Pages/Confirm/confirm.css'
 
 
 const router = createBrowserRouter([
@@ -46,6 +49,15 @@ const router = createBrowserRouter([
       <div>
         <PassNav />
         <BorderOne />
+      </div>
+    ),
+  },
+  {
+    path: '/confirm',
+    element: (
+      <div>
+        <ConNavbar />
+        <ConfirmDetails/>
       </div>
     ),
   },
